@@ -1,6 +1,0 @@
-name: CTFMQ
-description: |
-  RabbitMQ Implementation for CTF
-version: v1.0
-category: CTF
-maintainer: Brent Imhoff <bimhoff@planetspork.com>
