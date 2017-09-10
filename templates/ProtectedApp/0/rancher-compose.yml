@@ -4,7 +4,7 @@ services:
     start_on_create: true
 catalog:
   name: ProtectMe
-  version: 1.0
+  version: 1.0-rancher2
   description: |
     Poorly written app that desperately needs protection
   maintainer: Brent Imhoff <bimhoff@planetspork.com>

@@ -1,7 +1,7 @@
 version: '2'
 catalog:
   name: CTFMonitor
-  version: 1.0
+  version: 1.0-rancher2
   description: |
     Stack of containers to poll, report and score the defense activities of this fine CTF
   maintainer: Brent Imhoff <bimhoff@planetspork.com>
