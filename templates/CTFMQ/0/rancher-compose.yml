@@ -1,5 +1,6 @@
-version: '2'
-services:
-  CTFamqp:
-    scale: 1
-    start_on_create: true
+.catalog:
+  name: "ctfmq"
+  version: "1.0"
+  description: "test"
+  minimum_rancher_version: v0.46.0
+
