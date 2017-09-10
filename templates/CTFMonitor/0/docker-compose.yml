@@ -19,7 +19,7 @@ services:
     tty: true
     labels:
       io.rancher.container.pull_image: always
-      io.rancher.scheduler.affinity:host_label: role=scoring
+      io.rancher.scheduler.affinity:host_label: service=static
   CTFStatus:
     image: sporky/ctfmonitor:status
     stdin_open: true
@@ -28,11 +28,11 @@ services:
     - 5678:5000/tcp
     labels:
       io.rancher.container.pull_image: always
-      io.rancher.scheduler.affinity:host_label: role=scoring
+      io.rancher.scheduler.affinity:host_label: service=static
   CTFReporter:
     image: sporky/ctfmonitor:reporter
     stdin_open: true
     tty: true
     labels:
       io.rancher.container.pull_image: always
-      io.rancher.scheduler.affinity:host_label: role=scoring
+      io.rancher.scheduler.affinity:host_label: service=static
