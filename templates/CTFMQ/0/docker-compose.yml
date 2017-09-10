@@ -10,4 +10,4 @@
     - 15672:15672/tcp
     labels:
       io.rancher.container.pull_image: always
-      io.rancher.scheduler.affinity:host_label: services=static
+      io.rancher.scheduler.affinity:host_label: service=static

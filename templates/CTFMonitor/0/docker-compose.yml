@@ -1,0 +1,38 @@
+version: '2'
+services:
+  AMPQ:
+    image: rabbitmq:3.6-management-alpine
+    environment:
+      RABBITMQ_DEFAULT_USER: ctfadmin
+      RABBITMQ_DEFAULT_PASS: adminctf
+    stdin_open: true
+    tty: true
+    ports:
+    - 5672:5672/tcp
+    - 15672:15672/tcp
+    labels:
+      io.rancher.container.pull_image: always
+      io.rancher.scheduler.affinity:host_label: service=static
+  CTFPoller:
+    image: sporky/ctfmonitor:poller
+    stdin_open: true
+    tty: true
+    labels:
+      io.rancher.container.pull_image: always
+      io.rancher.scheduler.affinity:host_label: role=scoring
+  CTFStatus:
+    image: sporky/ctfmonitor:status
+    stdin_open: true
+    tty: true
+    ports:
+    - 5678:5000/tcp
+    labels:
+      io.rancher.container.pull_image: always
+      io.rancher.scheduler.affinity:host_label: role=scoring
+  CTFReporter:
+    image: sporky/ctfmonitor:reporter
+    stdin_open: true
+    tty: true
+    labels:
+      io.rancher.container.pull_image: always
+      io.rancher.scheduler.affinity:host_label: role=scoring

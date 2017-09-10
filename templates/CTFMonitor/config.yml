@@ -1,0 +1,6 @@
+name: CTFMonitor
+description: |
+  Poll, report and score this fine CTF
+version: v1.0
+category: CTF
+maintainer: Brent Imhoff <bimhoff@planetspork.com>
