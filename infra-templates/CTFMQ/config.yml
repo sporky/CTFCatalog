@@ -1,5 +1,0 @@
-name: CTFMQ
-description: |
-  RabbitMQ Implementation for CTF
-version: 0.1.0-rc1-rancher1
-category: CTF
