@@ -1,0 +1,13 @@
+version: '2'
+services:
+  ProtectMe:
+    image: sporky/easyapp
+    stdin_open: true
+    tty: true
+    ports:
+    - 5000:5000/tcp
+    labels:
+      io.rancher.scheduler.affinity:host_label: role=protected
+      io.rancher.container.pull_image: always
+      io.rancher.scheduler.global: 'true'
+

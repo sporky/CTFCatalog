@@ -3,3 +3,5 @@ description: |
   Protected Application for each team in CTF
 version: v0.2
 category: CTF
+maintainer: Brent Imhoff <bimhoff@planetspork.com>
+

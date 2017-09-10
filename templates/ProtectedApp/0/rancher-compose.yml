@@ -1,0 +1,10 @@
+version: '2'
+services:
+  ProtectMe:
+    start_on_create: true
+catalog:
+  name: ProtectMe
+  version: 1.0
+  description: |
+    Poorly written app that desperately needs protection
+  maintainer: Brent Imhoff <bimhoff@planetspork.com>
