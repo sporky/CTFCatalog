@@ -25,3 +25,9 @@ services:
     - 6603:3306/tcp
     labels:
       io.rancher.container.pull_image: always
+  ctfmemcache:
+    image: memcached
+    stdin_open: true
+    tty: true
+    ports:
+    - 11011:11011/tcp
