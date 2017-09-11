@@ -11,6 +11,8 @@ services:
       io.rancher.container.pull_image: always
       io.rancher.scheduler.affinity:host_label: service=board
       io.rancher.sidekicks: ctfmysql,ctfmemcache
+    command:
+      - /CTFSetup/container-setup.sh
   ctfmysql:
     image: mysql/mysql-server
     hostname: rtbmysql
