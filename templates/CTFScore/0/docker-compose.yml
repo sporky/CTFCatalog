@@ -10,7 +10,7 @@ services:
     labels:
       io.rancher.container.pull_image: always
       io.rancher.scheduler.affinity:host_label: service=board
-      io.rancher.sidekicks: ctfmysql
+      io.rancher.sidekicks: ctfmysql,ctfmemcache
   ctfmysql:
     image: mysql/mysql-server
     hostname: rtbmysql
@@ -31,3 +31,5 @@ services:
     tty: true
     ports:
     - 11011:11011/tcp
+    lables:
+      io.rancher.container.pull_image: always
