@@ -1,0 +1,14 @@
+version: '2'
+services:
+  CTFScore:
+    scale: 1
+    start_on_create: true
+  ctfmysql:
+    scale: 1
+    start_on_create: true
+catalog:
+  name: CTFScore
+  version: 1.0-rancher2
+  description: |
+    CTF Scoreboard using RootTheBox by molich.
+  maintainer: Brent Imhoff <bimhoff@planetspork.com>

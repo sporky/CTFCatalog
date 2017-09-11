@@ -1,0 +1,27 @@
+version: '2'
+services:
+  CTFScore:
+    image: sporky/scoreboard
+    hostname: ctfscore
+    stdin_open: true
+    tty: true
+    ports:
+    - 80:8888/tcp
+    labels:
+      io.rancher.container.pull_image: always
+      io.rancher.scheduler.affinity:host_label: service=board
+      io.rancher.sidekicks: ctfmysql
+  ctfmysql:
+    image: mysql/mysql-server
+    hostname: rtbmysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ctfadminverylongpassword
+      MYSQL_USER: ctfadmin
+      MYSQL_PASSWORD: ctfadminverylongpassword
+      MYSQL_DATABASE: rootthebox
+    stdin_open: true
+    tty: true
+    ports:
+    - 6603:3306/tcp
+    labels:
+      io.rancher.container.pull_image: always
