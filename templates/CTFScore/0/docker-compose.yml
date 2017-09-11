@@ -31,5 +31,5 @@ services:
     tty: true
     ports:
     - 11011:11011/tcp
-    lables:
+    labels:
       io.rancher.container.pull_image: always
