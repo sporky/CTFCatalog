@@ -10,7 +10,7 @@ services:
     labels:
       io.rancher.container.pull_image: always
       io.rancher.scheduler.affinity:host_label: service=board
-      io.rancher.sidekicks: ctfmysql,ctfmemcache
+      io.rancher.sidekicks: ctfmysql,ctfmemcache,ctfsecrets
     command:
       - /CTFBuild/container_setup.sh
   ctfmysql:
@@ -35,3 +35,7 @@ services:
     - 11011:11011/tcp
     labels:
       io.rancher.container.pull_image: always
+  ctfsecrets:
+    image: secrets
+    stdin_open: true
+    tty: true
