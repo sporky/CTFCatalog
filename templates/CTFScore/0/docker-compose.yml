@@ -12,7 +12,7 @@ services:
       io.rancher.scheduler.affinity:host_label: service=board
       io.rancher.sidekicks: ctfmysql,ctfmemcache
     command:
-      - /CTFBuild/container_setup.sh
+      - /RootTheBox/setup/container_setup.sh
   ctfmysql:
     image: mysql/mysql-server
     hostname: rtbmysql
