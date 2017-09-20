@@ -9,6 +9,9 @@ services:
   ctfmemcache:
     scale: 1
     start_on_create: true
+  CTFBuild:
+    scale: 1
+    start_on_create: true
 catalog:
   name: CTFScore
   version: 1.0-rancher2
