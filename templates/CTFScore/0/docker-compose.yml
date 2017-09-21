@@ -36,7 +36,7 @@ services:
     labels:
       io.rancher.container.pull_image: always
   CTFBuild:
-    image: ctfbuild
+    image: sporky/ctfbuild
     stdin_open: true
     tty: true
     labels:
