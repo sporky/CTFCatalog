@@ -2,6 +2,9 @@ version: '2'
 services:
   CTFScore:
     image: sporky/scoreboard
+    depends_on:
+      ctfmysql:
+        condition: service_healthy
     hostname: ctfscore
     stdin_open: true
     tty: true
@@ -43,3 +46,4 @@ services:
       io.rancher.scheduler.affinity:host_label: service=board
       io.rancher.container.start_once: 'true'
       io.rancher.container.requested_ip: 10.42.1.1
+      
