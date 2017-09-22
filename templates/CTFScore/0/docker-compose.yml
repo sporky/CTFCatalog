@@ -1,21 +1,5 @@
 version: '2'
 services:
-  CTFScore:
-    image: sporky/scoreboard
-    depends_on:
-      ctfmysql:
-        condition: service_healthy
-    hostname: ctfscore
-    stdin_open: true
-    tty: true
-    ports:
-    - 80:8888/tcp
-    labels:
-      io.rancher.container.pull_image: always
-      io.rancher.scheduler.affinity:host_label: service=board
-      io.rancher.sidekicks: ctfmysql,ctfmemcache
-    command:
-      - /RootTheBox/setup/container_setup.sh
   ctfmysql:
     image: mysql/mysql-server
     hostname: rtbmysql
@@ -30,6 +14,19 @@ services:
     - 6603:3306/tcp
     labels:
       io.rancher.container.pull_image: always
+  CTFScore:
+    image: sporky/scoreboard
+    hostname: ctfscore
+    stdin_open: true
+    tty: true
+    ports:
+    - 80:8888/tcp
+    labels:
+      io.rancher.container.pull_image: always
+      io.rancher.scheduler.affinity:host_label: service=board
+      io.rancher.sidekicks: ctfmysql,ctfmemcache
+    command:
+      - /RootTheBox/setup/container_setup.sh
   ctfmemcache:
     image: memcached
     stdin_open: true
