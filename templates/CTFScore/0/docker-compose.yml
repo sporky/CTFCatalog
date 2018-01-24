@@ -26,7 +26,7 @@ services:
       io.rancher.scheduler.affinity:host_label: service=board
       io.rancher.sidekicks: ctfmysql,ctfmemcache
     command:
-      - /RootTheBox/setup/container_setup.sh
+      - /PrivRootTheBox/setup/container_setup.sh
   ctfmemcache:
     image: memcached
     stdin_open: true
