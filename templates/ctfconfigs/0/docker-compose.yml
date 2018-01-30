@@ -1,0 +1,43 @@
+version: '2'
+services:
+  consul2:
+    image: progrium/consul:latest
+    hostname: consul2
+    expose:
+    - '8400'
+    - '8500'
+    - '8600'
+    command:
+    - -server
+    - -join
+    - consul1
+    labels:
+      io.rancher.scheduler.affinity:host_label: service=static
+  consul3:
+    image: progrium/consul:latest
+    hostname: consul3
+    expose:
+    - '8400'
+    - '8500'
+    - '8600'
+    command:
+    - -server
+    - -join
+    - consul1
+    labels:
+      io.rancher.scheduler.affinity:host_label: service=static
+  consul1:
+    image: progrium/consul:latest
+    hostname: consul1
+    ports:
+    - 8400:8400/tcp
+    - 8500:8500/tcp
+    - 8600:53/tcp
+    command:
+    - -server
+    - -bootstrap-expect
+    - '3'
+    - -ui-dir
+    - /ui
+    labels:
+      io.rancher.scheduler.affinity:host_label: service=config
