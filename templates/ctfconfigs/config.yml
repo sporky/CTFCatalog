@@ -1,6 +1,6 @@
-name: ctfconfigs
+name: CTF Configs
 description: |
-  Consul cluster for config management
+  CTF Config Management
 version: 1.0-rancher2
 category: CTF
 maintainer: Brent Imhoff <bimhoff@planetspork.com>
