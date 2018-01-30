@@ -1,4 +1,10 @@
 version: '2'
+catalog:
+  name: ctfconfigs
+  version: 1.0-rancher2
+  description: |
+    Central configs
+  maintainer: Brent Imhoff <bimhoff@planetspork.com>
 services:
   consul2:
     scale: 1
