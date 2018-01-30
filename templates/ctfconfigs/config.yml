@@ -1,4 +1,4 @@
-name: CTFConfigs
+name: ctfconfigs
 description: |
   Consul cluster for config management
 version: 1.0-rancher2
