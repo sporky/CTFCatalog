@@ -1,6 +1,6 @@
 version: '2'
 services:
-  CTFScore:
+  ctfscore:
     scale: 1
     start_on_create: true
   ctfmysql:
@@ -9,7 +9,7 @@ services:
   ctfmemcache:
     scale: 1
     start_on_create: true
-  CTFBuild:
+  ctfbuild:
     scale: 1
     start_on_create: true
 catalog:
