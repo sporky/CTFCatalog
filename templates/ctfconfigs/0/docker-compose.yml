@@ -25,7 +25,7 @@ services:
     - -join
     - consul1
     labels:
-      io.rancher.scheduler.affinity:host_label: service=static
+      io.rancher.scheduler.affinity:host_label: service=board
   consul1:
     image: progrium/consul:latest
     hostname: consul1
