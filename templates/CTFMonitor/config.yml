@@ -1,6 +1,6 @@
 name: CTFMonitor
 description: |
-  Poll, report and score this fine CTF
+  Start this last - Monitors each team, reports on progress
 version: 1.0-rancher2
 category: CTF
 maintainer: Brent Imhoff <bimhoff@planetspork.com>
