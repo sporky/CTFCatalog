@@ -9,7 +9,7 @@ services:
     command:
     - node
     - ctf-app.js
-    - 1
+    - "1"
     labels:
       io.rancher.scheduler.affinity:host_label: role=protected
       io.rancher.scheduler.global: 'true'
@@ -23,7 +23,7 @@ services:
     command:
     - node
     - ctf-app.js
-    - 2
+    - "2"
     labels:
       io.rancher.scheduler.affinity:host_label: role=protected
       io.rancher.scheduler.global: 'true'
@@ -37,7 +37,7 @@ services:
     command:
     - node
     - ctf-app.js
-    - 3
+    - "3"
     labels:
       io.rancher.scheduler.affinity:host_label: role=protected
       io.rancher.scheduler.global: 'true'
@@ -51,7 +51,7 @@ services:
     command:
     - node
     - ctf-app.js
-    - 4
+    - "4"
     labels:
       io.rancher.scheduler.affinity:host_label: role=protected
       io.rancher.scheduler.global: 'true'
@@ -65,7 +65,7 @@ services:
     command:
     - node
     - ctf-app.js
-    - 5
+    - "5"
     labels:
       io.rancher.scheduler.affinity:host_label: role=protected
       io.rancher.scheduler.global: 'true'
@@ -79,7 +79,7 @@ services:
     command:
     - node
     - ctf-app.js
-    - 6
+    - "6"
     labels:
       io.rancher.scheduler.affinity:host_label: role=protected
       io.rancher.scheduler.global: 'true'
@@ -93,7 +93,7 @@ services:
     command:
     - node
     - ctf-app.js
-    - 7
+    - "7"
     labels:
       io.rancher.scheduler.affinity:host_label: role=protected
       io.rancher.container.pull_image: always
@@ -108,7 +108,7 @@ services:
     command:
     - node
     - ctf-app.js
-    - 8
+    - "8"
     labels:
       io.rancher.scheduler.affinity:host_label: role=protected
       io.rancher.scheduler.global: 'true'
