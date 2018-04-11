@@ -96,7 +96,6 @@ services:
     - "7"
     labels:
       io.rancher.scheduler.affinity:host_label: role=protected
-      io.rancher.container.pull_image: always
       io.rancher.scheduler.global: 'true'
       io.rancher.scheduler.affinity:host_label: team=7
   team8:
