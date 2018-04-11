@@ -1,0 +1,10 @@
+version: '2'
+services:
+  sshreporter:
+    start_on_create: true
+catalog:
+  name: sshreport
+  version: 1.0-rancher2
+  description: |
+    SSH Reporting app
+  maintainer: Brad Parker <b.parker@f5.com>

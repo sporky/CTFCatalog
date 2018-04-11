@@ -1,0 +1,13 @@
+version: '2'
+services:
+  sshreporter:
+    image: bepsoccer/sshd:alpine
+    stdin_open: true
+    tty: true
+    ports:
+    - 2222:2222/tcp
+    labels:
+      io.rancher.scheduler.affinity:host_label: role=protected
+      io.rancher.container.pull_image: always
+      io.rancher.scheduler.global: 'true'
+
