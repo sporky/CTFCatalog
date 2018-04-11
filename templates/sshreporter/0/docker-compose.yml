@@ -5,7 +5,7 @@ services:
     stdin_open: true
     tty: true
     ports:
-    - 2222:2222/tcp
+    - 22:2222/tcp
     labels:
       io.rancher.scheduler.affinity:host_label: role=protected
       io.rancher.container.pull_image: always
