@@ -1,0 +1,7 @@
+name: Flag Reporter for LTM challenges
+description: |
+  Start whenever.  No dependencies.
+version: 1.0-rancher2
+category: CTF
+maintainer: Shane Levin <s.levin@f5.com>
+
