@@ -3,7 +3,7 @@ catalog:
   name: ctfconfigs
   version: 1.0-rancher2
   description: |
-    Central configs
+    Central config KV store
   maintainer: Brent Imhoff <bimhoff@planetspork.com>
 services:
   consul2:
