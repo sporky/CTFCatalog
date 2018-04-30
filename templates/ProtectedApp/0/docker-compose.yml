@@ -10,7 +10,7 @@ services:
     - TEAM=1
     labels:
       io.rancher.scheduler.affinity:host_label: role=protected
-      io.rancher.scheduler.affinity:host_label: team=${TEAM}
+      io.rancher.scheduler.affinity:host_label: team=1
       io.rancher.container.pull_image: always
       io.rancher.scheduler.global: 'true'
 
@@ -24,7 +24,7 @@ services:
     - TEAM=2
     labels:
       io.rancher.scheduler.affinity:host_label: role=protected
-      io.rancher.scheduler.affinity:host_label: team=${TEAM}
+      io.rancher.scheduler.affinity:host_label: team=2
       io.rancher.container.pull_image: always
       io.rancher.scheduler.global: 'true'
 
@@ -38,7 +38,7 @@ services:
     - TEAM=3
     labels:
       io.rancher.scheduler.affinity:host_label: role=protected
-      io.rancher.scheduler.affinity:host_label: team=${TEAM}
+      io.rancher.scheduler.affinity:host_label: team=3
       io.rancher.container.pull_image: always
       io.rancher.scheduler.global: 'true'
 
@@ -52,7 +52,7 @@ services:
     - TEAM=4
     labels:
       io.rancher.scheduler.affinity:host_label: role=protected
-      io.rancher.scheduler.affinity:host_label: team=${TEAM}
+      io.rancher.scheduler.affinity:host_label: team=4
       io.rancher.container.pull_image: always
       io.rancher.scheduler.global: 'true'
 
@@ -66,7 +66,7 @@ services:
     - TEAM=5
     labels:
       io.rancher.scheduler.affinity:host_label: role=protected
-      io.rancher.scheduler.affinity:host_label: team=${TEAM}
+      io.rancher.scheduler.affinity:host_label: team=5
       io.rancher.container.pull_image: always
       io.rancher.scheduler.global: 'true'
 
@@ -80,7 +80,7 @@ services:
     - TEAM=6
     labels:
       io.rancher.scheduler.affinity:host_label: role=protected
-      io.rancher.scheduler.affinity:host_label: team=${TEAM}
+      io.rancher.scheduler.affinity:host_label: team=6
       io.rancher.container.pull_image: always
       io.rancher.scheduler.global: 'true'
 
@@ -94,7 +94,7 @@ services:
     - TEAM=7
     labels:
       io.rancher.scheduler.affinity:host_label: role=protected
-      io.rancher.scheduler.affinity:host_label: team=${TEAM}
+      io.rancher.scheduler.affinity:host_label: team=7
       io.rancher.container.pull_image: always
       io.rancher.scheduler.global: 'true'
 
@@ -108,7 +108,7 @@ services:
     - TEAM=8
     labels:
       io.rancher.scheduler.affinity:host_label: role=protected
-      io.rancher.scheduler.affinity:host_label: team=${TEAM}
+      io.rancher.scheduler.affinity:host_label: team=8
       io.rancher.container.pull_image: always
       io.rancher.scheduler.global: 'true'
 
