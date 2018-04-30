@@ -1,7 +1,7 @@
 version: '2'
 services:
   ctfmysql:
-    image: mysql/mysql-server
+    image: mysql/mysql-server:5.7
     hostname: rtbmysql
     environment:
       MYSQL_ROOT_PASSWORD: ctfadminverylongpassword
