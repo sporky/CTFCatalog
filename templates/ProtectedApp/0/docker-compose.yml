@@ -1,13 +1,114 @@
 version: '2'
 services:
-  ProtectMe:
+  ProtectMe1:
     image: sporky/easyapptwo
     stdin_open: true
     tty: true
     ports:
     - 5000:5000/tcp
+    environment:
+    - TEAM=1
     labels:
       io.rancher.scheduler.affinity:host_label: role=protected
+      io.rancher.scheduler.affinity:host_label: team=${TEAM}
+      io.rancher.container.pull_image: always
+      io.rancher.scheduler.global: 'true'
+
+  ProtectMe2:
+    image: sporky/easyapptwo
+    stdin_open: true
+    tty: true
+    ports:
+    - 5000:5000/tcp
+    environment:
+    - TEAM=2
+    labels:
+      io.rancher.scheduler.affinity:host_label: role=protected
+      io.rancher.scheduler.affinity:host_label: team=${TEAM}
+      io.rancher.container.pull_image: always
+      io.rancher.scheduler.global: 'true'
+
+  ProtectMe3:
+    image: sporky/easyapptwo
+    stdin_open: true
+    tty: true
+    ports:
+    - 5000:5000/tcp
+    environment:
+    - TEAM=3
+    labels:
+      io.rancher.scheduler.affinity:host_label: role=protected
+      io.rancher.scheduler.affinity:host_label: team=${TEAM}
+      io.rancher.container.pull_image: always
+      io.rancher.scheduler.global: 'true'
+
+  ProtectMe4:
+    image: sporky/easyapptwo
+    stdin_open: true
+    tty: true
+    ports:
+    - 5000:5000/tcp
+    environment:
+    - TEAM=4
+    labels:
+      io.rancher.scheduler.affinity:host_label: role=protected
+      io.rancher.scheduler.affinity:host_label: team=${TEAM}
+      io.rancher.container.pull_image: always
+      io.rancher.scheduler.global: 'true'
+
+  ProtectMe5:
+    image: sporky/easyapptwo
+    stdin_open: true
+    tty: true
+    ports:
+    - 5000:5000/tcp
+    environment:
+    - TEAM=5
+    labels:
+      io.rancher.scheduler.affinity:host_label: role=protected
+      io.rancher.scheduler.affinity:host_label: team=${TEAM}
+      io.rancher.container.pull_image: always
+      io.rancher.scheduler.global: 'true'
+
+  ProtectMe6:
+    image: sporky/easyapptwo
+    stdin_open: true
+    tty: true
+    ports:
+    - 5000:5000/tcp
+    environment:
+    - TEAM=6
+    labels:
+      io.rancher.scheduler.affinity:host_label: role=protected
+      io.rancher.scheduler.affinity:host_label: team=${TEAM}
+      io.rancher.container.pull_image: always
+      io.rancher.scheduler.global: 'true'
+
+  ProtectMe7:
+    image: sporky/easyapptwo
+    stdin_open: true
+    tty: true
+    ports:
+    - 5000:5000/tcp
+    environment:
+    - TEAM=7
+    labels:
+      io.rancher.scheduler.affinity:host_label: role=protected
+      io.rancher.scheduler.affinity:host_label: team=${TEAM}
+      io.rancher.container.pull_image: always
+      io.rancher.scheduler.global: 'true'
+
+  ProtectMe8:
+    image: sporky/easyapptwo
+    stdin_open: true
+    tty: true
+    ports:
+    - 5000:5000/tcp
+    environment:
+    - TEAM=8
+    labels:
+      io.rancher.scheduler.affinity:host_label: role=protected
+      io.rancher.scheduler.affinity:host_label: team=${TEAM}
       io.rancher.container.pull_image: always
       io.rancher.scheduler.global: 'true'
 

@@ -1,10 +1,26 @@
 version: '2'
 services:
-  ProtectMe:
+  ProtectMe1:
     start_on_create: true
+  ProtectMe2:
+    start_on_create: true
+  ProtectMe3:
+    start_on_create: true
+  ProtectMe4:
+    start_on_create: true
+  ProtectMe5:
+    start_on_create: true
+  ProtectMe6:
+    start_on_create: true
+  ProtectMe7:
+    start_on_create: true
+  ProtectMe8:
+    start_on_create: true
+
 catalog:
   name: ProtectMe
   version: 1.0-rancher2
   description: |
     Poorly written app that desperately needs protection
   maintainer: Brent Imhoff <bimhoff@planetspork.com>
+  

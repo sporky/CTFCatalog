@@ -11,6 +11,8 @@ services:
     - -server
     - -join
     - consul1
+    depends_on:
+      - consul1
     labels:
       io.rancher.scheduler.affinity:host_label: service=static
   consul3:
@@ -24,6 +26,8 @@ services:
     - -server
     - -join
     - consul1
+    depends_on:
+      - consul1
     labels:
       io.rancher.scheduler.affinity:host_label: service=board
   consul1:
