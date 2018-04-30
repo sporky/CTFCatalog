@@ -1,0 +1,7 @@
+name: Flag Reporter Stack
+description: |
+  Start whenever..
+version: 1.0-rancher2
+category: CTF
+maintainer: Brent Imhoff <b.imhoff@f5.com>
+

@@ -1,0 +1,26 @@
+version: '2'
+services:
+  team1:
+    start_on_create: true
+  team2:
+    start_on_create: true
+  team3:
+    start_on_create: true
+  team4:
+    start_on_create: true
+  team5:
+    start_on_create: true
+  team6:
+    start_on_create: true
+  team7:
+    start_on_create: true
+  team8:
+    start_on_create: true
+  sshreporter:
+    start_on_create: true
+catalog:
+  name: Flag Reporters
+  version: 1.0-rancher2
+  description: |
+    Brad and Shane's Flag reporters.  Consolidated the LTM Reporter and SSH Reporter to this stack
+  maintainer: Shane Levin <s.levin@f5.com>
