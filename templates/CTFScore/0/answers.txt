@@ -1,0 +1,6 @@
+MYSQL_PASS=ctfadminverylongpassword
+MYSQL_USER=ctfadmin
+MYSQL_HOST=ctfmysql
+MYSQL_PORT=3306
+CTF_ADMIN=ctfadmin
+CTF_PASSWD=ctfadminverylongpassword

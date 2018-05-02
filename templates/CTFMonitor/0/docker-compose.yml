@@ -13,6 +13,7 @@ services:
     labels:
       io.rancher.container.pull_image: always
       io.rancher.scheduler.affinity:host_label: service=static
+      
   CTFPoller:
     image: sporky/ctfmonitor:poller
     stdin_open: true
@@ -20,6 +21,7 @@ services:
     labels:
       io.rancher.container.pull_image: always
       io.rancher.scheduler.affinity:host_label: service=static
+      
   CTFStatus:
     image: sporky/ctfmonitor:status
     stdin_open: true
@@ -29,6 +31,7 @@ services:
     labels:
       io.rancher.container.pull_image: always
       io.rancher.scheduler.affinity:host_label: service=static
+      
   CTFReporter:
     image: sporky/ctfmonitor:reporter
     stdin_open: true
@@ -36,3 +39,13 @@ services:
     labels:
       io.rancher.container.pull_image: always
       io.rancher.scheduler.affinity:host_label: service=static
+      
+  CTFBlinker:
+    image: bepsoccer/blue-team-status
+    stdin_open: true
+    tty: true
+    ports:
+    - 8443:8443/tcp
+    labels:
+      io.rancher.container.pull_image: always
+      io.rancher.scheduler.affinity:host_label: service=config

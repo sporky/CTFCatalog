@@ -5,8 +5,8 @@ services:
     hostname: rtbmysql
     environment:
       MYSQL_ROOT_PASSWORD: ctfadminverylongpassword
-      MYSQL_USER: ctfadmin
-      MYSQL_PASSWORD: ctfadminverylongpassword
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASS}
       MYSQL_DATABASE: rootthebox
     stdin_open: true
     tty: true
@@ -17,6 +17,13 @@ services:
   ctfscore:
     image: sporky/scoreboard
     hostname: ctfscore
+    environment:
+      MYSQL_PASS: ${MYSQL_PASS}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_HOST: ctfmysql
+      MYSQL_PORT: ${MYSQL_PORT}
+      CTF_ADMIN: ${CTF_ADMIN}
+      CTF_PASSWD: ${CTF_PASSWD}
     stdin_open: true
     tty: true
     ports:
