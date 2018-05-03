@@ -5,8 +5,8 @@ services:
     hostname: rtbmysql
     environment:
       MYSQL_ROOT_PASSWORD: ctfadminverylongpassword
-      MYSQL_USER: ctfadmin
-      MYSQL_PASSWORD: 1229518066da4a388ebe2b445b83b56a
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASS}
       MYSQL_DATABASE: rootthebox
     stdin_open: true
     tty: true
