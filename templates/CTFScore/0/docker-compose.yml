@@ -53,6 +53,14 @@ services:
     image: sporky/ctfbuild
     stdin_open: true
     tty: true
+    environmment:
+      SCOREBOARD: ctfscore
+      MYSQL_PASS: ${MYSQL_PASS}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_HOST: ctfmysql
+      MYSQL_PORT: ${MYSQL_PORT}
+      CTF_ADMIN: ${CTF_ADMIN}
+      CTF_PASSWD: ${CTF_PASSWD}
     labels:
       io.rancher.container.pull_image: always
       io.rancher.scheduler.affinity:host_label: service=board
