@@ -1,1 +1,1 @@
-Protected Application
+Hack to the Future Scoreboard

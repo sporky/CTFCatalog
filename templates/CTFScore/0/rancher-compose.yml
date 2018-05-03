@@ -1,4 +1,5 @@
 version: '2'
+
 catalog:
   name:  CTFScore
   version: 1.0-rancher2
@@ -10,37 +11,42 @@ catalog:
       type: "password"
       required: true
       default: "ctfadminverylongpassword"
+      
     - variable: MYSQL_USER
       label: "MYSQL Username"
       description: "Account that will access the DB"
       type: "string"
       required: true
       default: "ctfadmin"
+      
     - variable: MYSQL_HOST
       label: "MYSQL Host"
       description: "MYSQL hostname"
       type: "string"
       required: true
       default: "ctfmysql"
+      
     - variable: MYSQL_PORT
       label: "MYSQL Port"
       description: "MYSQL Port:"
       type: "int"
       required: true
       default: "3306"
+      
     - variable: CTF_PASSWD
       label: "CTF Admin Password"
       description: "Password for CTF Admin"
       type: "password"
       required: true
       default: "ctfadminverylongpassword"
+      
     - variable: CTF_ADMIN
       label: "CTF Admin Username"
       description: "CTF Administrator Username"
       type: "string"
       required: true
       default: "ctfadmin"
-
+      
 services:
   ctfscore:
     scale: 1
