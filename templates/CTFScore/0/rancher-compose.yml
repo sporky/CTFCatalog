@@ -1,4 +1,40 @@
 version: '2'
+catalog:
+  name:  CTFScore
+  version: 1.0-rancher2
+  description: "Hack to the Future scoreboard"
+  questions:
+    - variable: MYSQL_PASS
+      label: "MYSQL User Password"
+      description: "Password for account accessing the DB"
+      type: "password"
+      required: true
+    - variable: MYSQL_USER
+      label: "MYSQL Username"
+      description: "Account that will access the DB"
+      type: "string"
+      required: true
+    - variable: MYSQL_HOST
+      label: "MYSQL Host"
+      description: "MYSQL hostname"
+      type: "string"
+      required: true
+    - variable: MYSQL_PORT
+      label: "MYSQL Port"
+      description: "MYSQL Port:"
+      type: "int"
+      required: true
+      default: "3306"
+    - variable: CTF_PASSWD
+      label: "CTF Admin Password"
+      description: "Password for CTF Admin"
+      type: "password"
+      required: true
+    - variable: CTF_ADMIN
+      label: "CTF Admin Username"
+      description: "CTF Administrator Username"
+      type: "string"
+      required: true
 services:
   ctfscore:
     scale: 1
@@ -12,9 +48,3 @@ services:
   ctfbuild:
     scale: 1
     start_on_create: true
-catalog:
-  name: CTFScore
-  version: 1.0-rancher2
-  description: |
-    CTF Scoreboard using RootTheBox by molich.
-  maintainer: Brent Imhoff <bimhoff@planetspork.com>
