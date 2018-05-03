@@ -37,6 +37,8 @@ services:
       io.rancher.sidekicks: ctfmysql,ctfmemcache
     command:
       - /RootTheBox/setup/container_setup.sh
+    depends_on:
+      - ctfmysql
       
   ctfmemcache:
     image: memcached
