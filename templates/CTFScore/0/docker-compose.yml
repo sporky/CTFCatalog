@@ -51,8 +51,15 @@ services:
       
   ctfbuild:
     image: sporky/ctfbuild
-    stdin_open: true
     hostname: ctfbuild
+    environment:
+      MYSQL_PASS: ${MYSQL_PASS}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_HOST: ctfmysql
+      MYSQL_PORT: ${MYSQL_PORT}
+      CTF_ADMIN: ${CTF_ADMIN}
+      CTF_PASSWD: ${CTF_PASSWD}
+    stdin_open: true
     tty: true
     labels:
       io.rancher.container.pull_image: always
