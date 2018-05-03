@@ -57,7 +57,7 @@ services:
       SCOREBOARD: ctfscore
       MYSQL_PASS: ${MYSQL_PASS}
       MYSQL_USER: ${MYSQL_USER}
-      MYSQL_HOST: ctfmysql
+      MYSQL_HOST: ctfmysql.ctfscore.ctfscore
       MYSQL_PORT: ${MYSQL_PORT}
       CTF_ADMIN: ${CTF_ADMIN}
       CTF_PASSWD: ${CTF_PASSWD}
