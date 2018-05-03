@@ -54,7 +54,6 @@ services:
     stdin_open: true
     tty: true
     environmment:
-      SCOREBOARD: ctfscore
       MYSQL_PASS: ${MYSQL_PASS}
       MYSQL_USER: ${MYSQL_USER}
       MYSQL_HOST: ctfmysql.ctfscore.ctfscore
