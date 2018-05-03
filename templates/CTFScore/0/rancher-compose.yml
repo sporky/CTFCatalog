@@ -9,16 +9,19 @@ catalog:
       description: "Password for account accessing the DB"
       type: "password"
       required: true
+      default: "ctfadminverylongpassword"
     - variable: MYSQL_USER
       label: "MYSQL Username"
       description: "Account that will access the DB"
       type: "string"
       required: true
+      default: "ctfadmin"
     - variable: MYSQL_HOST
       label: "MYSQL Host"
       description: "MYSQL hostname"
       type: "string"
       required: true
+      default: "ctfmysql"
     - variable: MYSQL_PORT
       label: "MYSQL Port"
       description: "MYSQL Port:"
@@ -30,11 +33,14 @@ catalog:
       description: "Password for CTF Admin"
       type: "password"
       required: true
+      default: "ctfadminverylongpassword"
     - variable: CTF_ADMIN
       label: "CTF Admin Username"
       description: "CTF Administrator Username"
       type: "string"
       required: true
+      default: "ctfadmin"
+
 services:
   ctfscore:
     scale: 1
