@@ -54,13 +54,6 @@ services:
     stdin_open: true
     hostname: ctfbuild
     tty: true
-    environmment:
-      MYSQL_PASS: ${MYSQL_PASS}
-      MYSQL_USER: ${MYSQL_USER}
-      MYSQL_HOST: ctfmysql.ctfscore.ctfscore
-      MYSQL_PORT: ${MYSQL_PORT}
-      CTF_ADMIN: ${CTF_ADMIN}
-      CTF_PASSWD: ${CTF_PASSWD}
     labels:
       io.rancher.container.pull_image: always
       io.rancher.scheduler.affinity:host_label: service=board
