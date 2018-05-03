@@ -53,7 +53,7 @@ services:
     image: sporky/ctfbuild
     hostname: ctfbuild
     environment:
-      SCOREBOARD: ctfscore
+      SCOREBOARD: ctfscore:8888
       MYSQL_PASS: ${MYSQL_PASS}
       MYSQL_USER: ${MYSQL_USER}
       MYSQL_HOST: ctfmysql.ctfscore.ctfscore
