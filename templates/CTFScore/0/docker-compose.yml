@@ -52,6 +52,7 @@ services:
   ctfbuild:
     image: sporky/ctfbuild
     stdin_open: true
+    hostname: ctfbuild
     tty: true
     environmment:
       MYSQL_PASS: ${MYSQL_PASS}
