@@ -1,4 +1,4 @@
-name: Protected Application
+name: CTF Protected Application
 description: |
   Start this 3rd.  Depends on CTF Scoreboard.
 version: 1.0-rancher2
