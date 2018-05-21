@@ -1,6 +1,6 @@
 name: Protected Application
 description: |
-  CTF Configs *MUST* be operational before starting. 
+  Start this 3rd.  Depends on CTF Scoreboard.
 version: 1.0-rancher2
 category: CTF
 maintainer: Brent Imhoff <bimhoff@planetspork.com>
