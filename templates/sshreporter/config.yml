@@ -1,7 +1,0 @@
-name: zSSH Reporter Application
-description: |
-  Do not start.  Deprecated
-version: 1.0-rancher2
-category: CTF
-maintainer: Brad Parker <b.parker@f5.com>
-
