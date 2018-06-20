@@ -113,7 +113,7 @@ services:
       io.rancher.scheduler.global: 'true'
       io.rancher.scheduler.affinity:host_label: team=8
   sshreporter:
-    image: bepsoccer/sshd:alpine
+    image: sporky/sshd
     stdin_open: true
     tty: true
     ports:
