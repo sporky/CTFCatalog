@@ -6,10 +6,6 @@ catalog:
     Stack of containers to poll, report and score the defense activities of this fine CTF
   maintainer: Brent Imhoff <bimhoff@planetspork.com>
 services:
-  AMPQ:
-    retain_ip: true
-    scale: 1
-    start_on_create: true
   CTFPoller:
     scale: 1
     start_on_create: true
