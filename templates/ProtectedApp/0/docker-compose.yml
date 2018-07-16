@@ -8,6 +8,7 @@ services:
     - 5000:5000/tcp
     environment:
     - TEAM=1
+    - CONSUL_HOST=10.10.0.60
     labels:
       io.rancher.scheduler.affinity:host_label: role=protected
       io.rancher.scheduler.affinity:host_label: team=1
@@ -22,6 +23,7 @@ services:
     - 5000:5000/tcp
     environment:
     - TEAM=2
+    - CONSUL_HOST=10.10.0.60
     labels:
       io.rancher.scheduler.affinity:host_label: role=protected
       io.rancher.scheduler.affinity:host_label: team=2
@@ -36,6 +38,7 @@ services:
     - 5000:5000/tcp
     environment:
     - TEAM=3
+    - CONSUL_HOST=10.10.0.60
     labels:
       io.rancher.scheduler.affinity:host_label: role=protected
       io.rancher.scheduler.affinity:host_label: team=3
@@ -50,6 +53,7 @@ services:
     - 5000:5000/tcp
     environment:
     - TEAM=4
+    - CONSUL_HOST=10.10.0.60
     labels:
       io.rancher.scheduler.affinity:host_label: role=protected
       io.rancher.scheduler.affinity:host_label: team=4
@@ -64,6 +68,7 @@ services:
     - 5000:5000/tcp
     environment:
     - TEAM=5
+    - CONSUL_HOST=10.10.0.60
     labels:
       io.rancher.scheduler.affinity:host_label: role=protected
       io.rancher.scheduler.affinity:host_label: team=5
@@ -78,6 +83,7 @@ services:
     - 5000:5000/tcp
     environment:
     - TEAM=6
+    - CONSUL_HOST=10.10.0.60
     labels:
       io.rancher.scheduler.affinity:host_label: role=protected
       io.rancher.scheduler.affinity:host_label: team=6
@@ -92,6 +98,7 @@ services:
     - 5000:5000/tcp
     environment:
     - TEAM=7
+    - CONSUL_HOST=10.10.0.60
     labels:
       io.rancher.scheduler.affinity:host_label: role=protected
       io.rancher.scheduler.affinity:host_label: team=7
@@ -106,6 +113,7 @@ services:
     - 5000:5000/tcp
     environment:
     - TEAM=8
+    - CONSUL_HOST=10.10.0.60
     labels:
       io.rancher.scheduler.affinity:host_label: role=protected
       io.rancher.scheduler.affinity:host_label: team=8
