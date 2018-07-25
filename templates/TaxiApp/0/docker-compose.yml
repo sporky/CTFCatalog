@@ -1,0 +1,32 @@
+version: '2'
+services:
+  yourtaxi-base:
+    image: sporky/yourtaxi_base
+    stdin_open: true
+    tty: true
+    ports:
+      - 8080:8080/tcp
+    depends_on:
+      - mongo
+    labels:
+      io.rancher.scheduler.affinity:host_label: role=shared
+      io.rancher.container.pull_image: always
+      io.rancher.scheduler.global: 'true'
+  ssrfserver:
+    image: sporky/yourtaxi_ssrfserver
+    stdin_open: true
+    tty: true
+    expose:
+      - '80'
+    labels:
+      io.rancher.scheduler.affinity:host_label: role=shared
+      io.rancher.container.pull_image: always
+      io.rancher.scheduler.global: 'true'
+  mongo:
+    image: "mongo:3.4.4"
+    stdin_open: true
+    tty: true
+    labels:
+      io.rancher.scheduler.affinity:host_label: role=shared
+      io.rancher.container.pull_image: always
+      io.rancher.scheduler.global: 'true'

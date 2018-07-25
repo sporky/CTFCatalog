@@ -1,0 +1,14 @@
+version: '2'
+services:
+  yourtaxi-base:
+    start_on_create: true
+  ssrfserver:
+    start_on_create: true
+  mongo:
+    start_on_create: true
+catalog:
+  name: TaxiApp
+  version: 1.0-rancher2
+  description: |
+    Taxi App - tomer
+  maintainer: Brent <b.imhoff@f5.com>
